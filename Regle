@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8" />
+		<link rel = "stylesheet" href = "yahtzee.css" />
+		<title>Les règles dy yahtzee</title>
+	</head>
+	
+	<body>
+		<div class = "title">
+			<div class = "menu">
+				<a href = "yahtzee_jeu.html">Jouer</a>
+				<a href = "yahtzee_cahier.html" id = "cahier_des_charges">Cahier des charges</a>
+			</div>
+			<div class = "logo">
+				<img src = "images/logo.png" title = "logo" alt = "logo"/>
+			</div>
+			<h1>Yahtzee</h1>
+		</div>
+
+		<div class = "content">
+			<div class = "regle">
+				<h1>Comment jouer au yahtzee?</h1>
+					<h2>Règle de base</h2>
+						<p>Le yahtzee est un jeu tout simple !! Voici les principes fondamentaux.</p>
+						<ul>
+							<li>Vous disposez de 5 dé et de 3 lancer afin de réaliser certaine combinaison pour obtenir un maximum de points.</li>
+							<li>Pour ce faire vous pouvez relancer uniquement les dés que vous souhaitez.</li>
+							<li>Un dé conserver après le lancer 1 peut par contre être relancer au lancer 3.</li>
+							<li>Vous n'êtes pas obliger d'utiliser vos 3 lancers.</li>
+							<li>Si vous obtenez un score de 63 ou plus dans la partie du haut, vous obtenez un bonus de 35 points.</li>
+							<li>Si vous faites plusieurs Yathzee vous obtenez 100 points supplementaire par Yathzee</li>
+							<li>Si vous ne realisez pas une combinaison après vos 3 lancers vous devez mettre 0 dans l'une des combinaisons. Celle-ci deviendra infaisable même en cas de réussite</li>
+							<li>Il est possible de mettre 0 dans une des combinaisons même si vous reussissez une combinaisons. </li>
+							<li>Le joueur gagnant est celui qui obtient le plus de points à la fin de la partie.</li>							
+						</ul>
+					<h2>Calculs des points</h2>
+						<ul>
+							<li>Un : 1 x nombre de dé 1</li>
+							<li>Deux : 	2 x nombre de dé 2</li>
+							<li>Trois : 3 x nombre de dé 3</li>
+							<li>Quatre : 4 x nombre de dé 4</li>
+							<li>Cinq : 5 x nombre de dé 5</li>
+							<li>Six : 6 x nombre de dé 6</li>
+							<li>Brelan : Somme des 5 dés</li>
+							<li>Carré : Somme des 5 dés</li>
+							<li>Full : 25 Points</li>
+							<li>Petite suite : 30 points</li>
+							<li>Grande suite : 40 Points</li>
+							<li>Chance : Somme des 5 dés</li>
+							<li>Yathzee : 50 points</li>
+						</ul>
+					<h2>Les combinaisons</h2>
+						<ul>
+							<li>Un : Maximum de dé 1</li>
+							<li>Deux : Maximum de dé 2</li>
+							<li>Trois : Maximum de dé 3</li>
+							<li>Quatre : Maximum de dé 4</li>
+							<li>Cinq : Maximum de dé 5</li>
+							<li>Six : Maximum de dé 6</li>
+							<li>Brelan : 3 dés identiques</li>
+							<li>Carré : 4 dés identiques</li>
+							<li>Full : 3 dés identiques + 2 autres dé differents identiques</li>
+							<li>Petite suite : 4 dés qui se suivent</li>
+							<li>Grande suite : 5 dés qui se suivent</li>
+							<li>Chance : Peu importe les dés</li>
+							<li>Yathzee : 5 dés identiques</li>
+						</ul>
+			</div>
+		</div>
+	</body>
+</html>
