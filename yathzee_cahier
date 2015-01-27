@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- <meta charset = "utf-8" /> Enlevé pour faute d'accent.. -->
+		<link rel = "stylesheet" href = "yahtzee.css" />
+		<title>Les règles du yahtzee</title>
+	</head>
+	
+	<body>
+		<div class = "title">
+			<div class = "menu">
+				<a href = "yahtzee_jeu.html">Jouer</a>
+				<a href = "yahtzee_regle.html">Règle</a>
+			</div>
+			<div class = "logo">
+				<img src = "images/logo.png" title = "logo" alt = "logo"/>
+			</div>
+			<h1>Yahtzee</h1>
+		</div>
+
+		<div class = "content">
+			<div class = "regle">
+				<h1>Cahier des charges</h1>
+					<h2>Equipe</h2>
+						<p>Dans notre projet, nous sommes une équipe de trois personnes : Frederick Zeinstra, Florian Naud, Adrien Deblock.</p>
+					<h2> Projet </h2>
+						<p> Nous avons décidé de faire le jeu 'Yathzee' afin de jouer en multijoueur jusqu'à 4 joueurs et contre l'ordinateur. <br />
+							<!-- ************************************************************************************ -->
+							<!-- **************************** PEUT ETRE A SUPPRIMER ********************************* -->
+							<!-- ************************************************************************************ -->
+							Que devons nous faire : 
+							<ul>
+								<li>Réaliser la page "règles"</li>
+								<li>Réaliser la page "cahier des charges" pour la remplir au fur et a mesure que notre projet avance</li>
+								<li>Réaliser la page "jeu"</li>
+								<ul>
+									<li>Créer un bouton pour jouer / un bouton vers les regles / un bouton vers le cahier des charges</li>
+									<li>Créer un bouton "lancer les dès" pour le 1er joueur ( qui s'affiche après avoir cliquer sur le bouton "jouer" )</li>
+									<li>Pouvoir tirer trois fois les dès, et pouvoir garder en mémoir certain d'entre eux entre chaque lancé</li>
+									<li>Entre chaque lancer, mettre le score en "gris" dans le tableau et pouvoir cliquer dessus pour prendre se score</li>
+									<li>Afficher ensuite le bouton "lancer les dès" pour le 2eme joueur</li>
+									<li>A la fin de la partie, faire le total des score de chaque case du tableau</li>
+									<li>Après que le jeu fonctionne pour 2joueurs "existant", créer une IA "non intelligente" pour jouer tout seul</li>
+									<li>Si cette IA fonctionne, en créer une "intelligente" qui va etre plus compliqué a battre</li>
+									<li>Faire un feu d'artifice quand yathzee</li>
+								</ul>
+							</ul>
+							<!-- ************************************************************************************ -->
+							<!-- ************************************************************************************ -->
+							<!-- ************************************************************************************ -->
+						</p>
+					<h3> Séance 1 : 20/01/15 </h3> <!-- Mettre le "STYLE" du h3 ensemble -->
+						<p> Florian : Ecriture des régles + Ecriture cahier des charges.<br />
+							Adrien : Création des differentes pages et du design.<br />
+							Frederick : Réalisation du lancement de dès en javascript.
+						</p>
+			</div>
+		</div>
+	</body>
+</html>
