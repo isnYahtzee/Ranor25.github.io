@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8" />
+		<link rel = "stylesheet" href = "yahtzee.css" />
+		<title>Projet ISN</title>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.2.min.js">
+		</script>
+		<script type="text/javascript" src = "yahtzee.js"> 
+		</script>
+	</head>
+	
+	<body>
+		<div class = "title">
+			<div class = "menu">
+				<a href = "yahtzee_regle.html">Règle</a>
+				<a href = "yahtzee_cahier.html" id = "cahier_des_charges">Cahier des charges</a>
+			</div>
+			<div class = "logo">
+				<img src = "images/logo.png" title = "logo" alt = "logo"/>
+			</div>
+			<h1>Yahtzee</h1>
+		</div>
+		
+		<div class = "content">
+			<div class = "explication">
+				<p>Pour notre projet ISN, nous avons décidé de réaliser un yahtzee.</p>
+			</div>
+			
+			<div class = "jeu">
+				<div class = "tableau_de_jeu">
+					<table id="tableau_de_jeu" hidden>
+						<tr>
+							<th></th>
+							<td>Joueur 1</td>
+							<td>Joueur 2</td>
+						</tr>
+						<tr id="un">
+							<th>Un</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="deux">
+							<th>Deux</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="trois">
+							<th>Trois</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="quatres">
+							<th>Quatres</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="cinqs">
+							<th>Cinqs</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="six" class="ligne_back">
+							<th>Six</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="Somme-superieur">
+							<th>Somme supérieur</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="bonus">
+							<th>Bonus</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="sous_total" class="ligne_back">
+							<th>Sous_total</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="brelan">
+							<th>Brelan</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="carre">
+							<th>Carré</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="Full">
+							<th>Full</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="petite_suite">
+							<th>Petite suite</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="grande_suite">
+							<th>Grande suite</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="chance">
+							<th>Chance</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="yahtzee">
+							<th>YAHTZEE</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="somme_inferieur" class="ligne_back">
+							<th>Somme inferieur</th>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr id="score_total">
+							<th>Score total</th>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div class = "combinaison" id = "combinaison_depart" hidden>
+					<p>	Brelan : 3 dés identiques (3,3,3) / Carrée : 4 dés identiques (5,5,5,5) / Full : 3 dés identiques + 2 autres dé identiques (1,1,1,2,2)<br />
+						Petite suite : 4 dés qui se suivent (1,2,3,4) / Grande suite : 5 dés qui se suivent (2,3,4,5,6) / Chance : somme de tout les dés<br />
+						Yathzee : 5 dés identiques
+					</p>
+				</div>
+				<div class = "butons" id = "button" hidden>
+					<button type = "button" onClick = "lancer_les_des()" id = "lancer1joueur">Lancer les dès</button>
+					<button type = "button" onClick = "lancer_les_des()" id = "lancer2joueur">Lancer les dès</button>
+				</div>
+				<div class = "jeux_apres" id = "jeux" hidden>
+				
+				</div>
+				<div id = "des_memoire" hidden>
+					
+				</div>
+				<div id = "AvantJeux">
+					<p>Pour connaître les règles, c'est <a href = "yahtzee_regle.html">ici</a>. <br />Bonne chance.</p>
+					<button type = "button" onClick = "initialisation()">Jouer au yahtzee</button>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
