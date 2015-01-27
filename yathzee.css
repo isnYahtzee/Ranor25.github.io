@@ -1,0 +1,168 @@
+html{
+	margin : 0;
+	padding : 0;
+}
+
+a{
+	text-decoration : none;
+}
+
+button:hover{
+	cursor : pointer;
+}
+
+.retourChariot{
+	
+}
+/*********************************************************************/
+/* ************************ Mise en page *****************************/
+/*********************************************************************/
+
+.title{
+	position : absolute;
+	background-color : #ececec;
+	width : 100%;
+	margin : 0;
+	padding : 0;
+	top : 0;
+	left : 0;
+	height : 50px;
+}
+
+.title h1{
+	margin : 0;
+	padding : 0;
+	color : #696969;
+	line-height : 45px;
+	margin-left : 41%;
+}
+
+.title .menu a{
+	height : 50px;
+	width : 88px;
+	float : left;
+	font-size : 1.3em;
+	line-height : 46px;
+	padding-left : 37px;
+	color : #696969;
+	transition : 300ms;
+}
+
+.title .menu a#cahier_des_charges{
+	width : 191px;
+}
+
+.title .menu a:hover{
+	background-color : #e1e1e1;
+}
+
+.content{
+	margin : 70px;
+}
+
+.content .jeu{
+	position : absolute;
+	background-color : green;
+	height : 83%;
+	width : 90%;
+	border-radius : 5px;
+}
+
+.title .logo{
+	float : right;
+}
+
+.content .regle{
+	background-color : #e1e1e1;
+	border-radius : 3px;
+	box-shadow : 1px 1px 1px #aaa;
+}
+
+.content .regle h1, .content .regle h2{
+	font-family : "Buxton Sketch", serif;
+}
+
+.content .regle h2, .content .regle p{
+	padding-left : 30px;
+}
+
+.content .regle ul{
+	padding-left : 60px;
+}
+
+.content .regle h1{
+	color : #ad3439;
+	text-align : center;
+}
+
+.content .regle h2{
+	color : #2ae66b;
+}
+/*********************************************************************/
+/* *************************** LE JEU ********************************/
+/*********************************************************************/
+
+.content .jeu #AvantJeux{
+	margin : 200px;
+	text-align : center;
+}
+
+.content .jeu #AvantJeux button{
+	border-radius : 5px;
+	padding : 10px;
+}
+
+.content .jeu .tableau_de_jeu{
+	padding : 30px;
+	position : absolute;
+	right : 30px;
+}
+
+.content .jeu .tableau_de_jeu #tableau_de_jeu .ligne_back{
+	border-bottom : 2px solid black;
+}
+
+.content .jeu .tableau_de_jeu #tableau_de_jeu{
+	border : 2px solid black;
+	border-collapse: collapse;
+	color : black;
+} 
+
+.content .jeu .combinaison{
+	position : absolute;
+	border-top : 1px solid black;
+	bottom : 10px;
+	height : 10%;
+	width : 70%;
+	margin-left : 19px;
+}
+
+.content .jeu .combinaison p{
+	padding-left : 10px;
+	padding-top : 10px;
+	margin : 0;
+}
+
+div.de{
+	float : left;
+}
+
+td, th{
+	border : black solid 1px;
+	padding : 3px;
+}
+
+.content .jeu .butons button{
+	margin-left : 200px;
+	margin-top : 200px;
+}
+
+.content .jeu .jeux_apres .des {
+	display : inline-block;
+	margin-left : 40px;
+}
+.content .jeu .jeux_apres {
+	margin-left : 110px ;
+	margin-top : 15px ;
+}
+
