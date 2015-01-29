@@ -46,7 +46,7 @@ function repet(nombre, de){
 	table2[n] = nombre
 	n++;
 	var elementDes = document.getElementById(de);
-	elementDes.style.zIndex = "-10";
+	elementDes.style.visibility = "hidden";
 	
 	for (var i = 0; table2.length>i;i++) {
 		if(i==0){
@@ -54,7 +54,5 @@ function repet(nombre, de){
 		} else{
 			elementDesMemoire.innerHTML += '<img src = "images/De'+table2[i]+'.png" id = "deuxieme_de" class = "des"/>';
 		}
-		
 	}
-	
 }
