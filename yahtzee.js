@@ -3,6 +3,7 @@ var elementTableau,
 	elementCombinaisonDepart,
 	elementAvantJeu,
 	n=0,
+	tableId = new Array(),
 	elementDesMemoire,
 	nombre_alea = new Array();
 	table2 = new Array();
@@ -44,15 +45,23 @@ function alea() {
 
 function repet(nombre, de){
 	table2[n] = nombre
+	tableId[n] = de;
 	n++;
 	var elementDes = document.getElementById(de);
 	elementDes.style.visibility = "hidden";
 	
 	for (var i = 0; table2.length>i;i++) {
 		if(i==0){
-			elementDesMemoire.innerHTML = '<img src = "images/De'+table2[i]+'.png" id = "deuxieme_de" class = "des" />';
+			elementDesMemoire.innerHTML = '<img src = "images/De'+table2[i]+'.png" id = "'+i+'i" class = "des" onClick = "remettre_de('+i+', '+tableId[i]+')"/>';
 		} else{
-			elementDesMemoire.innerHTML += '<img src = "images/De'+table2[i]+'.png" id = "deuxieme_de" class = "des"/>';
+			elementDesMemoire.innerHTML += '<img src = "images/De'+table2[i]+'.png" id = "'+i+'i" class = "des" onClick = "remettre_de('+i+', '+tableId[i]+')"/>';
 		}
 	}
+}
+
+function remettre_de(place, de){
+	var 	elementDes = document.getElementById(de),
+		elementDesC = document.getElementById(place+'i');
+	elementDes.style.visibility = "visible";
+	elementDesC.style.visibility = "hidden";
 }
